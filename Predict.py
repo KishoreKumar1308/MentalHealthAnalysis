@@ -9,6 +9,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import streamlit as st
 
+nltk.download(["stopwords","wordnet"])
+
 data = []
 lemmatizer = WordNetLemmatizer()
 stop_list = stopwords.words('english')
